@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CTF | ScoreBoard</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'main/css/scoreboard.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid bg">
+		<div class="container">
+			<!-- menu -->
+			<div class="row align-items-center menu">
+				<div class="col-sm-4 logo">
+					<h1><a href="{% url '' %}"><span>CTF</span> panel</a></h1>
+				</div>
+				<div class="col-sm-6 mainMenu">
+					<a  href="{% url 'scoreboard' %}"><span>р</span>ейтинг</a>
+					<a  href="{% url 'teams' %}"><span>к</span>оманды</a>
+					<a  href="{% url 'challenges' %}"><span>з</span>адачи</a>
+				</div>
+
+				<div class="col-sm-2 login">
+					<a data-toggle="modal" data-target="#enterModal"  href="#"><span class="firstLetter">в</span>ход</a>
+					<span>|</span>
+					<a data-toggle="modal" data-target="#regModal" href="#"><span class="firstLetter">р</span>егистрация</a>
+				</div>
+			</div>
+
+			<!-- contentHeder -->
+
+			<div class="row align-items-center contentHeader">
+				<h2 data-aos="zoom-in" data-aos-duration="500"><span>Р</span>ейтинг</h2>
+			</div>
+
+			<!-- content -->
+			<div class="row content">
+
+
+				<!-- <img src="img/scoreboard.png" alt="rec"> -->
+				<table>
+					<tr>
+						<td>1.</td>
+						<td><img src="{% static 'main/img/spirit_team.png' %}" alt=""></td>
+						<td>teamSpirit</td>
+						<td>12 343 pts</td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td><img src="{% static 'main/img/widow_team.jpg' %}" alt=""></td>
+						<td>teamWidow</td>
+						<td>6 999 pts</td>
+					</tr>
+					<tr>
+						<td>3.</td>
+						<td><img src="{% static 'main/img/shark_team.png' %}" alt=""></td>
+						<td>teamShark</td>
+						<td>999 pts</td>
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td><img src="{% static 'main/img/skulls_team.png' %}" alt=""></td>
+						<td>teamSkulls</td>
+						<td>99 pts</td>
+					</tr>
+				</table>
+			</div>
+			</div>
+
+			<!-- Enter Modal -->
+			<div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="enterModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-xl">
+			    <div class="modal-content">
+			      <div class="modal-body modalBG">
+			        <div class="container-fluid">
+			        	<div class="container">
+			        		<div class="row modalHeader align-items-center">
+			        			<div class="col-sm-12">
+			        				<h3>Вход</h3>
+			        			</div>
+			        		</div>
+
+			        		<div class="row modalBodyFirst align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">л</span>огин</span>
+			        				<input type="text" placeholder="Логин">
+			        			</div>
+			        		</div>
+			        		<div class="row modalBodySecond align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">п</span>ароль</span>
+			        				<input type="password" placeholder="Пароль">
+			        			</div>
+			        		</div>
+			        		<div class="row align-items-center passReset">
+			        			<div class="col-sm-12 reset">
+			        				<a class="forget" href="#">Забыли пароль</a>
+			        				<span class="reglink">Нет аккаунта? <a data-toggle="modal" data-target="#regModal" href="#">Зарегистрируйтесь</a></span>
+			        			</div>
+			        		</div>
+
+			        		<div class="row enterButton">
+			        			<div class="col-sm-12">
+			        				<a href="#">Войти</a>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Register Modal -->
+			<div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-xl">
+			    <div class="modal-content">
+			      <div class="modal-body modalBG">
+			        <div class="container-fluid">
+			        	<div class="container">
+			        		<div class="row modalHeader align-items-center">
+			        			<div class="col-sm-12">
+			        				<h3>Регистрация</h3>
+			        			</div>
+			        		</div>
+
+			        		<div class="row modalBodyFirst align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">л</span>огин</span>
+			        				<input type="text" placeholder="Логин">
+			        			</div>
+			        		</div>
+			        		<div class="row modalBodySecond align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">п</span>ароль</span>
+			        				<input type="password" placeholder="Пароль">
+			        			</div>
+			        		</div>
+
+			        		<div class="row enterButton">
+			        			<div class="col-sm-12">
+			        				<a href="#">Зарегистрироваться</a>
+			        			</div>
+			        		</div>
+			        	</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+			<!-- socials -->
+			<div class="row align-items-center socials">
+				<div data-aos="fade-right" data-aos-duration="500" class="col-sm-2 socials-item">
+					<a target="_blank" href="https://vk.com/"><img src="{% static 'main/img/vk.png' %}" alt="VK"></a>
+				</div>
+				<div data-aos="fade-right" data-aos-duration="500" class="col-sm-2 socials-item">
+					<a target="_blank" href="https://instagram.com/"><img src="{% static 'main/img/inst.png' %}" alt="VK"></a>
+				</div>
+				<div data-aos="fade-left" data-aos-duration="500" class="col-sm-2 socials-item">
+					<a target="_blank" href="https://www.facebook.com/"><img src="{% static 'main/img/facebook.png' %}" alt="VK"></a>
+				</div>
+				<div data-aos="fade-left" data-aos-duration="500" class="col-sm-6 socials-item">
+					<a target="_blank" href="https://www.telegram.org/"><img src="{% static 'main/img/telegram.png' %}" alt="VK"></a>
+				</div>
+			</div>
+
+			<!-- copy -->
+			<div class="row copy">
+				<p>@copyright 2021 | все права защищены. Не копировать!</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  	<!-- AOS -->
+  	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  	<script>
+  		AOS.init();
+	</script>
+</body>
+</html>

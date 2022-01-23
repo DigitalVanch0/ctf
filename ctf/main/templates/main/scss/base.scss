@@ -1,0 +1,317 @@
+// Base styles (main menu + footer)
+
+// font-family: 'Rationale', sans-serif; (OLD)
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Ubuntu Mono', monospace;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+
+.bg {
+	background-image: url(../img/bg.png);
+	background-size: cover;
+}
+
+.menu { 
+
+	padding-top: 3.4375rem;
+
+	// logo
+	& .logo {
+
+		& button {
+			border: 0;
+			padding: 0;
+			background: transparent;
+
+		}
+
+		& a, span {
+		font-family: 'Comfortaa', cursive;
+		text-decoration: none;
+		color: #fff;
+		font-size: 48px;
+
+			&:hover {
+				color: #fff;
+
+			}
+		}
+
+		& span {
+			color: #DDC047;
+
+			&:hover {
+				color: #DDC047;
+			}
+		}
+	}
+
+	// mainMenu
+	.mainMenu {
+		& a,span {
+
+			font-family: 'Comfortaa', cursive;
+			text-decoration: none;
+			color: #fff;
+			font-size: 28px;
+			margin-left: 30px;
+			padding-bottom: 8px;
+
+			&:nth-child(1) {
+				margin-left: 0;
+			}
+
+			&:hover {
+				transition: 0.1s;
+				border-bottom: 2px solid #fff;
+			}
+		}
+
+		& span {
+			color: #DDC047;
+		}
+	}
+
+	// login
+	.login {
+		color: #fff;
+
+		& a, span {
+			font-family: 'Comfortaa', cursive;
+			font-size: 18px;
+		}
+
+		& a {
+			text-decoration: none;
+			color: #fff;
+			padding-bottom: 5px;
+
+			&:hover {
+				transition: 0.1s;
+				border-bottom: 1px solid #fff;
+			}
+
+			& .firstLetter {
+				color: #DDC047;
+			}
+		}
+	}
+}
+
+// socials
+.socials {
+
+	padding-left: 23.75rem;
+
+	& .socials-item {
+
+		& img {
+			width: 50px;
+			height: 50px;
+
+			&:hover {
+				transition: 0.3s;
+				transform: scale(1.2, 1.2);
+			}
+
+			&:active {
+				transition: 0.3s;
+				transform: scale(1.1, 1.1);
+			}
+		}
+	}
+}
+
+// Footer styles
+
+.copy {
+
+	padding-top: 2.75rem;
+
+	& p {
+		text-align: center;
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 18px;
+		color: #fff;
+	}
+}
+
+
+// Enter/reg Modals
+
+
+.modalBG {
+	background: url(../img/bgModal.png);
+	border: 2px solid #D96932;
+}
+
+.modalHeader {
+
+	padding-top: 31px;
+	padding-bottom: 37px;
+
+	& h3 {
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 64px;
+		color: #fff;
+
+		&:first-letter {
+			color: #D96932;
+		}
+	}
+}
+
+.modalBodyFirst {
+	& span {
+		margin-left: 5px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 48px;
+		color: #fff;
+
+		& .modalBodyFirstLetter {
+			color: #D96932;
+		}
+	}
+
+	& input {
+		transition: 0.5s;
+		margin-left: 92px;
+		padding: 10px 438px 10px 18px;
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 24px;
+		background-color: rgba(32, 32, 32, 0.2);
+		border: 2px solid #D96932;
+		border-radius: 10px;
+		color: #fff;
+	}
+}
+
+.modalBodySecond {
+
+	padding-top: 38px;
+
+	& span {
+		margin-left: 5px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 48px;
+		color: #fff;
+
+		& .modalBodyFirstLetter {
+			color: #D96932;
+		}
+	}
+
+	& input {
+		transition: 0.5s;
+		margin-left: 60px;
+		padding: 10px 438px 10px 18px;
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 24px;
+		background-color: rgba(32, 32, 32, 0.2);
+		border: 2px solid #D96932;
+		border-radius: 10px;
+		color: #fff;
+	}
+}
+
+.passReset {
+
+	padding-top: 8px;
+
+	& .resetMain {
+		margin-left: 255px;
+
+		& .forget {
+			font-size: 18px;
+			font-family: 'Ubuntu Mono', monospace;
+			text-decoration: none;
+			color: #fff;
+
+			&:hover {
+				padding-bottom: 4px;
+				transition: 0.4s;
+				border-bottom: 1px solid #fff;
+			}
+
+		}
+	}
+
+	& .reset {
+		margin-left: 235px;
+
+		& .forget {
+			font-size: 18px;
+			font-family: 'Ubuntu Mono', monospace;
+			text-decoration: none;
+			color: #fff;
+
+			&:hover {
+				padding-bottom: 4px;
+				transition: 0.4s;
+				border-bottom: 1px solid #fff;
+			}
+
+		}
+	}
+
+	& .reglink {
+
+		margin-left: 305px;
+		font-size: 18px;
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+
+		& a {
+			font-size: 18px;
+			font-family: 'Ubuntu Mono', monospace;
+			text-decoration: none;
+			color: #DDC047;
+
+			&:hover {
+				padding-bottom: 4px;
+				transition: 0.4s;
+				border-bottom: 1px solid #DDC047;
+			}
+		}
+	}
+}
+
+
+.enterButton {
+	padding-top: 61px;
+	padding-bottom: 44px;
+	text-align: center;
+	& a {
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 36px;
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 80px;
+		background-color: rgba(217, 105, 50, 0.6);
+		border: 2px solid #D96932;
+		border-radius: 5px;
+
+		&:hover {
+			color: #fff;
+			background-color: rgba(217, 105, 50, 0.8);
+			transition: 0.3s;
+		}
+
+		&:avtive {
+			color: #fff;
+			background-color: rgba(184, 90, 43, 0.8);
+			transition: 0.3s;
+		}
+	}
+}
+
+
+

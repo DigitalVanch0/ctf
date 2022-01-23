@@ -1,0 +1,75 @@
+// font-family: 'Rationale', sans-serif; (OLD)
+// font-family: 'Ubuntu Mono', monospace;
+// font-family: 'Comfortaa', cursive;
+
+
+
+
+
+// MENU
+
+
+
+// content
+
+.content {
+
+	& .content-photo {
+		width: 500px;
+		height: 500px;
+	}
+
+	padding-top: 10.3125rem;
+	padding-bottom: 10.125rem;
+
+	& .content-item {
+
+		& h2, span {
+			margin: 0;
+			font-family: 'Ubuntu Mono', monospace;
+			color: #fff;
+			font-size: 96px;
+
+			& span {
+				// color: #D96932;
+			}
+		}
+
+		& p {
+
+			font-size: 48px;
+			font-family: 'Ubuntu Mono', monospace;
+			color: #fff;
+
+			&:first-letter {
+				color: #D96932;
+			}
+		}
+
+		& a {
+			font-size: 36px;
+			text-decoration: none;
+			font-family: 'Ubuntu Mono', monospace;
+			color: #fff;
+			padding: 10px 80px;
+			border: 2px solid #D96932;
+			background-color: rgba(217, 105, 50, 0.6);
+			border-radius: 5px;
+
+			&:hover {
+				transition: 0.3s;
+				background-color: rgba(217, 105, 50, 0.8);
+			}
+
+			&:active {
+				transition: 0.3s;
+				background-color: rgba(184, 90, 43, 0.8);
+			}
+
+		}
+	}
+}
+
+// socials
+
+// copy

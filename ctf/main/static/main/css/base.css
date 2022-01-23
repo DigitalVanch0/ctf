@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.bg {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+}
+
+.menu {
+  padding-top: 3.4375rem;
+}
+.menu .logo button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.menu .logo a, .menu .logo span {
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  color: #fff;
+  font-size: 48px;
+}
+.menu .logo a:hover, .menu .logo span:hover {
+  color: #fff;
+}
+.menu .logo span {
+  color: #DDC047;
+}
+.menu .logo span:hover {
+  color: #DDC047;
+}
+.menu .mainMenu a, .menu .mainMenu span {
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  margin-left: 30px;
+  padding-bottom: 8px;
+}
+.menu .mainMenu a:nth-child(1), .menu .mainMenu span:nth-child(1) {
+  margin-left: 0;
+}
+.menu .mainMenu a:hover, .menu .mainMenu span:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-bottom: 2px solid #fff;
+}
+.menu .mainMenu span {
+  color: #DDC047;
+}
+.menu .login {
+  color: #fff;
+}
+.menu .login a, .menu .login span {
+  font-family: "Comfortaa", cursive;
+  font-size: 18px;
+}
+.menu .login a {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 5px;
+}
+.menu .login a:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  border-bottom: 1px solid #fff;
+}
+.menu .login a .firstLetter {
+  color: #DDC047;
+}
+
+.socials {
+  padding-left: 23.75rem;
+}
+.socials .socials-item img {
+  width: 50px;
+  height: 50px;
+}
+.socials .socials-item img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+.socials .socials-item img:active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.copy {
+  padding-top: 2.75rem;
+}
+.copy p {
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 18px;
+  color: #fff;
+}
+
+.modalBG {
+  background: url(../img/bgModal.png);
+  border: 2px solid #D96932;
+}
+
+.modalHeader {
+  padding-top: 31px;
+  padding-bottom: 37px;
+}
+.modalHeader h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+  color: #fff;
+}
+.modalHeader h3:first-letter {
+  color: #D96932;
+}
+
+.modalBodyFirst span {
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+.modalBodyFirst span .modalBodyFirstLetter {
+  color: #D96932;
+}
+.modalBodyFirst input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 92px;
+  padding: 10px 438px 10px 18px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 24px;
+  background-color: rgba(32, 32, 32, 0.2);
+  border: 2px solid #D96932;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.modalBodySecond {
+  padding-top: 38px;
+}
+.modalBodySecond span {
+  margin-left: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+.modalBodySecond span .modalBodyFirstLetter {
+  color: #D96932;
+}
+.modalBodySecond input {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 60px;
+  padding: 10px 438px 10px 18px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 24px;
+  background-color: rgba(32, 32, 32, 0.2);
+  border: 2px solid #D96932;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.passReset {
+  padding-top: 8px;
+}
+.passReset .resetMain {
+  margin-left: 255px;
+}
+.passReset .resetMain .forget {
+  font-size: 18px;
+  font-family: "Ubuntu Mono", monospace;
+  text-decoration: none;
+  color: #fff;
+}
+.passReset .resetMain .forget:hover {
+  padding-bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid #fff;
+}
+.passReset .reset {
+  margin-left: 235px;
+}
+.passReset .reset .forget {
+  font-size: 18px;
+  font-family: "Ubuntu Mono", monospace;
+  text-decoration: none;
+  color: #fff;
+}
+.passReset .reset .forget:hover {
+  padding-bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid #fff;
+}
+.passReset .reglink {
+  margin-left: 305px;
+  font-size: 18px;
+  font-family: "Ubuntu Mono", monospace;
+  color: #fff;
+}
+.passReset .reglink a {
+  font-size: 18px;
+  font-family: "Ubuntu Mono", monospace;
+  text-decoration: none;
+  color: #DDC047;
+}
+.passReset .reglink a:hover {
+  padding-bottom: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid #DDC047;
+}
+
+.enterButton {
+  padding-top: 61px;
+  padding-bottom: 44px;
+  text-align: center;
+}
+.enterButton a {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 80px;
+  background-color: rgba(217, 105, 50, 0.6);
+  border: 2px solid #D96932;
+  border-radius: 5px;
+}
+.enterButton a:hover {
+  color: #fff;
+  background-color: rgba(217, 105, 50, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.enterButton a:avtive {
+  color: #fff;
+  background-color: rgba(184, 90, 43, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=base.css.map */

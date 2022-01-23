@@ -1,0 +1,266 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CTF</title>
+
+	<!-- FONTS (Ubuntu mono/Comfortaa (Rationale)) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'main/css/profile.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+
+	<!-- BOOTSTRAP --> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container-fluid bg">
+		<div class="container">
+			<!-- menu -->
+			<div class="row align-items-center menu">
+				<!-- logo -->
+				<div class="col-sm-4 logo">
+					<button data-aos="zoom-out" data-aos-duration="500"><a href="index.html"><span>CTF</span> panel</a></button>
+				</div>
+				<div class="col-sm-6 mainMenu">
+					<a data-aos="zoom-out" data-aos-duration="500"  href="scoreboard.html"><span>р</span>ейтинг</a>
+					<a data-aos="zoom-out" data-aos-duration="500"   href="teams.html"><span>к</span>оманды</a>
+					<a data-aos="zoom-out" data-aos-duration="500"	href="challenges.html"><span>з</span>адачи</a>
+				</div>
+
+				<div class="col-sm-2 login">
+					<a data-aos="zoom-out" data-aos-duration="500" href="#"><span class="firstLetter">u</span>sername</a>
+					<span data-aos="zoom-out" data-aos-duration="500">|</span>
+					<a data-aos="zoom-out" data-aos-duration="500" href="index.html"><span class="firstLetter">В</span>ыход</a>
+				</div>
+			</div>
+
+			<!-- content -->
+			<div class="contentBG" data-aos="zoom-out" data-aos-duration="500">
+				<div class="row content">
+					<div class="col-sm-10 profileInfo">
+						<p class="profileUname">username</p>
+						<p class="profilePname">Александр Павлов</p>
+						<p class="profileAge">25 лет</p>
+						<p class="profileTeam">Team : <span class="profileTeam">teamWidow</span> <span class="who">(FrontEnd developer)</span></p>
+					</div>
+					<div class="col-sm-2 profileIMG">
+						<img src="img/userimg.png" alt="">
+					</div>
+				</div>
+
+				<div class="row profileTableHeader">
+					<div class="col-sm">
+						<span>Текущие задачи : </span>
+					</div>
+				</div>
+
+				<div class="profileTable">
+					<div class="row">
+					<table>
+							<tr class="tr_1">
+								<td>SAMPLETASK1</td>
+								<td>
+									<button data-toggle="modal" data-target="#taskModal" class="td_button">Сдать задачу</button>
+								</td>
+							</tr>
+							<tr class="tr_2">
+								<td>SAMPLETASK2</td>
+								<td>
+									<button data-toggle="modal" data-target="#taskModal" class="td_button">Сдать задачу</button>
+								</td>
+							</tr>
+							<tr class="tr_1">
+								<td>SAMPLETASK3</td>
+								<td>
+									<button data-toggle="modal" data-target="#taskModal" class="td_button">Сдать задачу</button>
+								</td>
+							</tr>
+							<tr class="tr_2">
+								<td>SAMPLETASK4</td>
+								<td>
+									<button data-toggle="modal" data-target="#taskModal" class="td_button">Сдать задачу</button>
+								</td>
+							</tr>
+						</table>
+						</div>
+					</div>
+			</div>
+
+
+			<!-- completeTask modal -->
+			<div class="modal fade" id="taskModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+			    <div class="modal-content">
+			      <div class="modal-body taskmodalBG">
+			        <div class="container-fluid">
+			        	<div class="container">
+			    			<div class="row  taskmodal">
+			    				<div class="col-sm-8">
+			    				</div>
+			    				<div class="col-sm-4">
+			    					<span class="taskmodalheader">SAMPLETASK1</span>
+			    				</div>
+			    			</div>
+			    			<div class="row  taskmodal">
+			    				<div class="col-sm">
+			    					<span class="about">Описание задачи : </span>
+			    					<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Laboriosam iusto a dolorem corporis numquam dicta necessitatibus suscipit! Voluptatibus, assumenda sunt vero possimus, autem officia quam dignissimos, nulla dicta, fugit accusantium.
+			    					Recusandae nemo repellendus perferendis, corporis vitae sapiente quod alias dicta enim rem, ratione fugiat, minima laborum iusto velit excepturi illum quo neque officia architecto porro et nisi unde id. Quasi.</p>
+			    				</div>
+			    			</div>
+
+			    			<div class="row taskmodal">
+			    				<div class="col-sm">
+			    					<span class="about">Решение : </span><br>
+			    					<textarea class="txt" name="viewport" id="" cols="100" rows="3"></textarea>
+			    					<input class="addFile" id="addFile" type="file" multiple name=''><br>
+			    					<!-- <label for="addFile">Прикрепить файлы</label> -->
+			    				</div>
+			    			</div>
+
+			    			<div class="row align-items-center taskmodal">
+			    				<div class="col-sm-4">
+			    					<button>Сдать задачу</button>
+			    					
+			    				</div>
+			    				<div class="col-sm-8">
+			    					<span class="alert">Внимание : после отправки решения, его редактирование будет невозможно!</span>
+			    				</div>
+			    			</div>
+			        	</div>
+			      	</div>
+			    	</div>
+			  	</div>
+			</div>
+			</div>
+
+
+
+			<!-- Enter Modal -->
+			<div class="modal fade" id="enterModal" tabindex="-1" aria-labelledby="enterModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-xl">
+			    <div class="modal-content">
+			      <div class="modal-body modalBG">
+			        <div class="container-fluid">
+			        	<div class="container">
+			        		<div class="row modalHeader align-items-center">
+			        			<div class="col-sm-12">
+			        				<h3>Вход</h3>
+			        			</div>
+			        		</div>
+
+			        		<div class="row modalBodyFirst align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">л</span>огин</span>
+			        				<input type="text" placeholder="Логин">
+			        			</div>
+			        		</div>
+			        		<div class="row modalBodySecond align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">п</span>ароль</span>
+			        				<input type="password" placeholder="Пароль">
+			        			</div>
+			        		</div>
+			        		<div class="row align-items-center passReset">
+			        			<div class="col-sm-12 resetMain">
+			        				<a class="forget" href="#">Забыли пароль</a>
+			        				<span class="reglink">Нет аккаунта? <a data-toggle="modal" data-target="#regModal" href="#">Зарегистрируйтесь</a></span>
+			        			</div>
+			        		</div>
+
+			        		<div class="row enterButton">
+			        			<div class="col-sm-12">
+			        				<a href="#">Войти</a>
+			        			</div>
+			        		</div>		
+			        	</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- Register Modal -->
+			<div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-xl">
+			    <div class="modal-content">
+			      <div class="modal-body modalBG">
+			        <div class="container-fluid">
+			        	<div class="container">
+			        		<div class="row modalHeader align-items-center">
+			        			<div class="col-sm-12">
+			        				<h3>Регистрация</h3>
+			        			</div>
+			        		</div>
+
+			        		<div class="row modalBodyFirst align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">л</span>огин</span>
+			        				<input type="text" placeholder="Логин">
+			        			</div>
+			        		</div>
+			        		<div class="row modalBodySecond align-items-center">
+			        			<div class="col-sm">
+			        				<span><span class="modalBodyFirstLetter">п</span>ароль</span>
+			        				<input type="password" placeholder="Пароль">
+			        			</div>
+			        		</div>
+
+			        		<div class="row enterButton">
+			        			<div class="col-sm-12">
+			        				<a href="#">Зарегистрироваться</a>
+			        			</div>
+			        		</div>		
+			        	</div>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- socials -->
+			<div class="row align-items-center socials">
+				<div data-aos="fade-right" data-aos-duration="500" class="col-sm-2 socials-item">
+					<a target="_blank" href="http://www.vk.com"><img src="img/vk.png" alt="VK"></a>
+				</div>
+				<div data-aos="fade-right" data-aos-duration="500" class="col-sm-2 socials-item">
+					<a target="_blank" href="https://instagram.com/"><img src="img/inst.png" alt="Inst"></a>
+				</div>
+				<div data-aos="fade-left" data-aos-duration="1500" class="col-sm-2 socials-item">
+					<a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook"></a>
+				</div>
+				<div data-aos="fade-left" data-aos-duration="1500" class="col-sm-6 socials-item">
+					<a target="_blank" href="https://www.telegram.org/"><img src="img/telegram.png" alt="TG"></a>
+				</div>
+			</div>
+
+			<!-- copy -->
+			<div class="row copy">
+				<p>@copyright 2021 | все права защищены. Не копировать!</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- BOOTSTRAP JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  	<!-- AOS -->
+  	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  	<script>
+  		AOS.init();
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,53 @@
+.contentHeader {
+  padding-top: 4.8125rem;
+}
+.contentHeader h2, .contentHeader span {
+  text-align: center;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 96px;
+  color: #fff;
+}
+.contentHeader span {
+  color: #D96932;
+}
+
+.content {
+  overflow-x: auto;
+  height: 450px;
+  margin-bottom: 4.6875rem;
+  border-radius: 20px;
+  border: 3px solid #D96932;
+  background-color: rgba(2, 2, 2, 0.8);
+}
+.content table {
+  text-align: center;
+}
+.content table tr {
+  border-bottom: 3px solid #D96932;
+}
+.content table tr:nth-last-child(1) {
+  border-bottom: none;
+}
+.content table tr td {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Ubuntu Mono", monospace;
+}
+.content table tr td img {
+  width: 75px;
+  height: 50px;
+}
+.content::-webkit-scrollbar {
+  width: 0px;
+}
+.content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.content::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=scoreboard.css.map */

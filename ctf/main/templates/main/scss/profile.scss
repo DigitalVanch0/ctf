@@ -1,0 +1,218 @@
+.contentBG {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background-color: #020202;
+	height: 900px;
+	border-left: 3px solid #D96932;
+	border-right: 3px solid #D96932;
+	border-bottom: 3px solid #D96932;
+	border-radius: 10px;
+}
+
+.content {
+	padding-left: 20px;
+}
+
+.profileInfo {
+	font-family: 'Ubuntu Mono', monospace;
+	color: #fff;
+
+	& .profileUname {
+		font-size: 48px;
+	}
+
+	& .profilePname {
+		font-size: 18px;
+	}
+
+	& .profileAge {
+		font-size: 18px;
+	}
+
+	& .profileTeam {
+		font-size: 24px;
+
+		& .who {
+			font-size: 14px;
+		}
+	}
+
+}
+
+.profileTableHeader {
+
+	text-align: center;
+	margin-bottom: 45px;
+
+	& span {
+		font-size: 48px;
+		color: #fff;
+	}
+
+}
+
+.profileTable {
+	overflow-x: auto;
+ 	height: 500px;
+	margin-bottom: 3.4375rem;
+	border-top: 3px solid #FFF;
+	border-bottom: 3px solid #FFF;
+	border-radius: 10px;
+	background-color: rgba(2, 2, 2, 0.8);
+	& table {
+		text-align: center;
+
+		& tr {
+			// background-image: url(../img/challenges_bg.png);
+			// background-size: 100%;
+			border-bottom: 3px solid #D96932;
+
+			&:nth-last-child(1) {
+				border-bottom: none;
+			}
+			& td {
+				padding-top: 40px;
+				padding-bottom: 55px;	
+				font-size: 24px;
+				color: #fff;
+				font-family: 'Ubuntu Mono', monospace;
+
+				& .td_button {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					color: #fff;
+					border: 3px solid #D96932;
+					border-radius: 10px;
+					outline: none;
+					background-color: #020202;
+					padding-left: 40px;
+					padding-right: 40px;
+					font-size: 18px;
+
+					&:hover {
+						transition: 0.4s;
+						background-color: #D96932;
+					}
+				}
+			}
+		}
+	}
+
+	&::-webkit-scrollbar {
+	width: 0px;
+	} 
+
+	&::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	} 
+
+	&::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	}
+}
+
+// taskmodal
+
+.taskmodalBG {
+	background: url(../img/taskmodal_bg.png);
+	background-size: cover;
+	border: 3px solid #D96932;
+}
+
+
+.taskmodal {
+
+	& .taskmodalheader {
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 48px;
+		color: #fff;
+	}
+
+	& .about {
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 36px;
+		color: #fff;
+	}
+
+	& p {
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 18px;
+		color: #fff;
+	}
+
+	& button {
+		margin-top: 50px;
+		margin-bottom: 50px; 
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+		border: 3px solid #D96932;
+		border-radius: 10px;
+		outline: none;
+		background-color: #020202;
+		padding-left: 40px;
+		padding-right: 40px;
+		font-size: 36px;
+
+		&:hover {
+			transition: 0.4s;
+			background-color: #D96932;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	& .txt {
+		margin-bottom: 10px;
+		padding-top: 5px;
+		padding-left: 5px;
+		border: 2px solid #D96932;
+		border-radius: 10px;
+		font-family: 'Ubuntu Mono', monospace;
+		color: #fff;
+		font-size: 18px;
+		background-color: #101010;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	& .addFile {
+		// width: 0.1px;
+		// height: 0.1px;
+		// opacity: 0;
+		// overflow: hidden;
+		// position: absolute;
+		// z-index: -1;
+		
+		font-family: 'Ubuntu Mono', monospace;
+		font-size: 18px;
+		color: #fff;
+		border-radius: 10px;
+		background-color: #000;
+		padding: 5px 10px;
+		border: 1px solid #D96932;
+		cursor: pointer;
+	}
+
+	// & label {
+	// 	font-family: 'Ubuntu Mono', monospace;
+	// 	font-size: 18px;
+	// 	color: #fff;
+	// 	border-radius: 10px;
+	// 	background-color: #000;
+	// 	padding: 5px 10px;
+	// 	border: 1px solid #D96932;
+	// 	cursor: pointer;
+	// }
+
+	& .alert {
+		color: #fff;
+		font-size: 18px;
+		font-family: 'Ubuntu Mono', monospace;
+		width: 500px;
+	}
+}
+
